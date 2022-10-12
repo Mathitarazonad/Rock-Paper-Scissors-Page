@@ -1,0 +1,36 @@
+// Gradients
+$Scissors-gradients:(
+  initial: hsl(39, 89%, 49%) , 
+  last:hsl(40, 84%, 53%)
+);
+
+$Paper-gradients: (
+  initial:hsl(230, 89%, 62%) ,
+  last:hsl(230, 89%, 65%)
+);
+
+$Rock-gradients: (
+  initial:hsl(349, 71%, 52%) ,
+  last:hsl(349,70%,56%)
+);
+
+$Lizard-gradients: (
+  initial:hsl(261, 73%, 60%) ,
+  last:hsl(261, 72%, 63%)
+);
+
+$Spock-gradients: (
+  initial:hsl(189, 59%, 53%) ,
+  last:hsl(189, 58%, 57%)
+);
+
+
+$Dark-text: hsl(229, 25%, 31%);
+$Score-text: hsl(229, 64%, 46%);
+$Scoreboard-border: hsl(217, 16%, 45%);
+
+$Background-gradients: (
+  initial:hsl(214, 47%, 23%) ,
+  last:hsl(237,49%, 15%)
+);
+

@@ -1,0 +1,40 @@
+@use '_variables' as vars;
+
+.scoreboard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem;
+  border: 3px solid vars.$Scoreboard-border;
+  border-radius: 10px;
+
+  img {
+    height: 75px;
+  }
+
+  .scoreboard-counter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+    background-color: white;
+    border-radius: 5px;
+    height: 85px;
+    width: 85px;
+
+    h2 {
+      color: vars.$Score-text;
+      font-size: .85rem;
+      letter-spacing: 1px;
+    }
+
+    p {
+      font-size: 2.5rem;
+      color: vars.$Dark-text;
+      font-weight: 700;
+      letter-spacing: -3px;
+    }
+  }
+
+}
