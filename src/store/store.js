@@ -1,8 +1,8 @@
 import { configureStore } from '@reduxjs/toolkit';
-import { rulesReducer } from './rulesSlice';
+import rulesReducer from './rulesSlice'
 
 export const store = configureStore({
-  reducer:{
+  reducer: {
     rules: rulesReducer,
   },
 });

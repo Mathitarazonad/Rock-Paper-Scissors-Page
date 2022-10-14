@@ -1,14 +1,22 @@
-import { createSlice } from "@reduxjs/toolkit/dist/createSlice";
+import { createSlice } from '@reduxjs/toolkit';
 
-export const showRulesSlice = createSlice({
+const initialState = {
+  showRules : false
+}
+
+const showRulesSlice = createSlice({
   name: 'showRules',
-  value: false,
+  initialState,
   reducers : {
-    displayRules: (state) => {
-      state.value = true;
+    displayRules : (state) => {
+      state.showRules = true
     },
-    closeRules: (state) => {
-      state.value = false;
+    hideRules : (state) => {
+      state.showRules = false
     }
   }
-})
+});
+
+export default showRulesSlice.reducer;
+export const {displayRules, hideRules} = showRulesSlice.actions;
+
