@@ -1,4 +1,5 @@
-@use '_variables' as *;
+@forward '_variables';
+@forward '_functions';
 @use '_scoreboard';
 @use '_rules';
 @import url('https://fonts.googleapis.com/css2? family= Barlow+Semi+Condensed:wght@600;700 & display=swap');
@@ -9,14 +10,6 @@
   margin: 0;
   box-sizing: border-box;
 }
-
-@function getInitial($Gradient) {
-  @return map-get($Gradient, $key: initial)
-};
-
-@function getLast($Gradient) {
-  @return map-get($Gradient, $key: last)
-};
 
 body {
   background: radial-gradient(at top, 

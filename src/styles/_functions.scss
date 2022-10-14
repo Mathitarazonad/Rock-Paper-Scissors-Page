@@ -1,0 +1,7 @@
+@function getInitial($Gradient) {
+    @return map-get($Gradient, $key: initial)
+  };
+  
+@function getLast($Gradient) {
+    @return map-get($Gradient, $key: last)
+  };
