@@ -4,11 +4,11 @@ import bonusRules from '../images/image-rules-bonus.svg';
 import iconClose from '../images/icon-close.svg';
 import { hideRules } from '../store/rulesSlice';
 import { useDispatch } from 'react-redux/es/exports';
+import { useSelector } from 'react-redux/es/hooks/useSelector';
 
 function RulesChart() {
-  //This is only for now, then will be a state
-  let isNormal = true;
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
+  const isNormal = useSelector((store) => store.gamemodes.gamemode);
 
   return (
     <div className="rules-chart">
@@ -18,7 +18,12 @@ function RulesChart() {
         alt="rules"
         className="rules-img"
       />
-      <img src={iconClose} alt="close" className="close-icon" onClick={() => dispatch(hideRules())}/>
+      <img
+        src={iconClose}
+        alt="close"
+        className="close-icon"
+        onClick={() => dispatch(hideRules())}
+      />
     </div>
   );
 }
