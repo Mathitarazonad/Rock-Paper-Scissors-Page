@@ -1,4 +1,4 @@
-@use '_variables' as vars;
+@use 'abstracts' as *;
 
 .show-rules-btn {
   width: 43%;
@@ -29,7 +29,7 @@
   padding: 0 2rem;
 
   h2 {
-    color: vars.$Dark-text;
+    color: $Dark-text;
     font-size: 2rem;
   }
 

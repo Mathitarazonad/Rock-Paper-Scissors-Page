@@ -1,11 +1,11 @@
-@use '_variables' as vars;
+@use 'abstracts' as *;
 
 .scoreboard {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1.25rem;
-  border: 3px solid vars.$Scoreboard-border;
+  border: 3px solid $Scoreboard-border;
   border-radius: 10px;
 
   img {
@@ -23,14 +23,14 @@
     width: 85px;
 
     h2 {
-      color: vars.$Score-text;
+      color: $Score-text;
       font-size: .8rem;
       letter-spacing: 1px;
     }
 
     p {
       font-size: 2.5rem;
-      color: vars.$Dark-text;
+      color: $Dark-text;
       font-weight: 700;
     }
   }
