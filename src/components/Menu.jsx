@@ -7,8 +7,11 @@ function Menu() {
 
   return (
     <div className="menu">
-      <h1>Rock Paper or Scissors</h1>
-      <h2>Frontend Mentor Challenge</h2>
+      <div className='menu-title'>
+        <h1>Rock Paper or Scissors</h1>
+        <h2>Frontend Mentor Challenge</h2>
+      </div>
+      <div className='menu-gamemode'>
       <h3>Choose your gamemode</h3>
       <button
         onClick={() => dispatch(setNormalGamemode())}
@@ -24,6 +27,7 @@ function Menu() {
       >
         Bonus
       </button>
+      </div>
     </div>
   );
 }
