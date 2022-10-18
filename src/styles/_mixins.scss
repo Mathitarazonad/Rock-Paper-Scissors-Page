@@ -1,0 +1,10 @@
+@mixin gamemode-btn ($bg-color, $border-color) {
+  border: 5px solid $border-color;
+  border-radius: 20px;
+  padding: 1rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: $border-color;
+  background-color: $bg-color;
+  box-shadow:  0 0 3px $border-color , 0 0 3px $border-color inset;
+}
