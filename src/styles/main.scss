@@ -2,9 +2,10 @@
 @use 'functions' as *;
 @use 'scoreboard';
 @use 'rules';
+@use 'menu';
 @import url('https://fonts.googleapis.com/css2? family= Barlow+Semi+Condensed:wght@600;700 & display=swap');
 
-*{
+* {
   font-family: 'Barlow Semi Condensed', sans-serif;
   padding: 0;
   margin: 0;
@@ -12,9 +13,11 @@
 }
 
 body {
-  background: radial-gradient(at top, 
-  getInitial($Background-gradients) -50%,
-  getLast($Background-gradients));
+  background: radial-gradient(
+    at top,
+    getInitial($Background-gradients) -50%,
+    getLast($Background-gradients)
+  );
   height: 100vh;
   padding: 2.5rem;
 }
@@ -22,4 +25,19 @@ body {
 .main-container {
   display: flex;
   flex-direction: column;
+}
+
+footer {
+  position: absolute;
+  bottom:20px;
+  left: 0; right: 0;
+  text-align: center;
+  color: white;
+  font-size: 1rem;
+  
+  a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+  }
 }

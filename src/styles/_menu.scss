@@ -1,0 +1,56 @@
+@use 'abstracts' as *;
+
+$menu-text-color: white;
+
+.menu {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  margin: auto;
+  gap: 2rem;
+
+  h1 {
+    color: $menu-text-color;
+    text-shadow: 0 0 3px $menu-text-color; 
+    margin-bottom: .5rem;
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+    color: $menu-text-color;
+    text-shadow: 0 0 2px $menu-text-color; 
+  }
+
+  &-gamemode {
+    color: $menu-text-color;
+    border: 5px solid $menu-text-color;
+    box-shadow:  0 0 3px $menu-text-color , 0 0 3px $menu-text-color inset;
+    border-radius: 10px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    h3 {
+      font-size: 1.5rem;
+      color: $menu-text-color;
+      text-shadow: 0 0 5px $menu-text-color;
+      margin-bottom: .3rem
+    }
+
+    #normal-btn {
+      @include gamemode-btn(getInitial($Paper-gradients), $menu-text-color);
+      margin-bottom: 1rem;
+    }
+
+    #bonus-btn {
+      @include gamemode-btn(getInitial($Lizard-gradients), $menu-text-color)
+    }
+  }
+}
