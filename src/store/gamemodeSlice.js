@@ -1,7 +1,8 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
-  gamemode: undefined,
+  normalGamemode: undefined,
+  gamemodeSelected: false,
 };
 
 const GamemodeSlice = createSlice({
@@ -9,10 +10,12 @@ const GamemodeSlice = createSlice({
   initialState,
   reducers: {
     setNormalGamemode: (state) => {
-      state.gamemode = true;
+      state.normalGamemode = true;
+      state.gamemodeSelected = true;
     },
     setBonusGamemode: (state) => {
-      state.gamemode = false;
+      state.normalGamemode = false;
+      state.gamemodeSelected = true;
     },
   },
 });
