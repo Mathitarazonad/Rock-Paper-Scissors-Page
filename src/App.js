@@ -4,11 +4,11 @@ import Menu from './components/Menu';
 import Game from './components/Game';
 
 function App() {
-  const gamemodeSelected = useSelector(store => store.gamemodes.gamemodeSelected)
+  const gamemodeIsSelected = useSelector(store => store.gamemodes.gamemodeSelected)
 
   return (
     <div className="App">
-      {gamemodeSelected ? <Game /> : <Menu />}
+      {gamemodeIsSelected ? <Game /> : <Menu />}
       <footer> Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://www.frontendmentor.io/profile/Mathitarazonad" target='_blank'>Mathias Tarazona</a>.</footer>
     </div>
