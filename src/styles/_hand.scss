@@ -1,0 +1,38 @@
+@use 'abstracts' as *;
+
+.hands-container {
+  margin-top: 7rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.5rem;
+  position: relative;
+}
+
+.hands-bg {
+  position: absolute;
+  top: 40px;
+  z-index: -2;
+  width: 275px
+}
+
+#rock {
+  @include hand($Rock-gradients, 135px);
+  
+}
+
+#paper {
+  @include hand($Paper-gradients, 135px);
+}
+
+#scissors {
+  @include hand($Scissors-gradients, 135px);
+}
+
+#lizard {
+  @include hand($Lizard-gradients, 140px);
+}
+
+#spock {
+  @include hand($Spock-gradients, 140px);
+}

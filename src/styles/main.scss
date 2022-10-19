@@ -3,6 +3,7 @@
 @use 'scoreboard';
 @use 'rules';
 @use 'menu';
+@use 'hand';
 @import url('https://fonts.googleapis.com/css2? family= Barlow+Semi+Condensed:wght@600;700 & display=swap');
 
 * {
@@ -19,7 +20,7 @@ body {
     getLast($Background-gradients)
   );
   height: 100vh;
-  padding: 2.5rem;
+  padding: 2rem;
 }
 
 .main-container {
