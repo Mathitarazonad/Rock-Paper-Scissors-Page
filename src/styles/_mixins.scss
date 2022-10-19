@@ -1,3 +1,5 @@
+@use 'variables' as *;
+@use 'functions' as *;
 @mixin gamemode-btn ($bg-color, $border-color) {
   border: 5px solid $border-color;
   border-radius: 20px;
@@ -7,4 +9,31 @@
   color: $border-color;
   background-color: $bg-color;
   box-shadow:  0 0 3px $border-color , 0 0 3px $border-color inset;
+};
+
+@mixin hand ($hand-type, $size) {
+  background-color: white;
+  border: 20px solid getLast($hand-type);
+  border-radius: 50%;
+  padding: 1.5rem;
+  position: relative;
+  width: $size;
+  height: $size;
+
+  &::after {
+    content: '';
+    position: absolute;
+    background-color: getInitial($hand-type);
+    margin: auto;
+    z-index: -1;
+    border-radius: 50%;
+    width: $size;
+    height: $size;
+    top: 12px; right: 0; left: -20px; bottom: 0;
+  }
+
+  img {
+    width: 100%;
+  }
+  
 }
