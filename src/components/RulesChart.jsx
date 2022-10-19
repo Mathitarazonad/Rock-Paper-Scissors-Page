@@ -8,7 +8,7 @@ import { useSelector } from 'react-redux/es/hooks/useSelector';
 
 function RulesChart() {
   const dispatch = useDispatch();
-  const isNormal = useSelector((store) => store.gamemodes.gamemode);
+  const isNormal = useSelector((store) => store.gamemodes.normalGamemode);
 
   return (
     <div className="rules-chart">
