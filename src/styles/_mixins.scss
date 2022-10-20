@@ -13,27 +13,33 @@
 
 @mixin hand ($hand-type, $size) {
   background-color: white;
-  border: 20px solid getLast($hand-type);
+  border: 15px solid getLast($hand-type);
   border-radius: 50%;
   padding: 1.5rem;
-  position: relative;
   width: $size;
   height: $size;
+  position: relative;
 
-  &::after {
+  &::before {
     content: '';
     position: absolute;
     background-color: getInitial($hand-type);
     margin: auto;
-    z-index: -1;
+    z-index: -2;
     border-radius: 50%;
     width: $size;
     height: $size;
-    top: 12px; right: 0; left: -20px; bottom: 0;
+    top: 11px; right: 0; left: -15px; bottom: 0;
   }
 
   img {
     width: 100%;
   }
   
+}
+
+@mixin bonus-btns-position ($top:0px, $right:0px, $bottom:0px, $left:0px) {
+  position: absolute;
+  top: $top; left: $left; right: $right; bottom: $bottom;
+  margin: auto;
 }
