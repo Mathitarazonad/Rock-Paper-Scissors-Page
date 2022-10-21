@@ -1,10 +1,11 @@
 import React from 'react';
 import normalLogo from '../images/logo.svg';
 import bonusLogo from '../images/logo-bonus.svg';
+import { useSelector } from 'react-redux/es/exports';
 
 function Scoreboard () {
   
-  let isNormal = true;
+  let isNormal = useSelector(store => store.gamemodes.normalGamemode);
 
   return (
     <div className='scoreboard'>
