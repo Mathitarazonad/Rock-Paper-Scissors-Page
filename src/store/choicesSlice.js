@@ -6,14 +6,14 @@ const initialState = {
 };
 
 const choicesSlice = createSlice({
-  name: choices,
+  name: 'choices',
   initialState,
   reducers: {
-    setUserChoice: (state, action) => {
-      console.log(action);
+    setUserChoice: (state, actions) => {
+      state.userChoice = actions.payload;
     },
   },
 });
 
-export default choicesSlice;
+export default choicesSlice.reducer;
 export const { setUserChoice } = choicesSlice.actions;
