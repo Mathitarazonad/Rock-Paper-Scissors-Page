@@ -17,6 +17,7 @@
   }
 
   .single-hand {
+    cursor: pointer;
     &:hover {
       transition: .5s;
       transform: scale(1.1);
@@ -70,17 +71,17 @@
 
   #rock {
     @include hand($Rock-gradients, 110px);
-    @include bonus-btns-position(270px, 0, 0, 160px)
+    @include bonus-btns-position(270px, 0, 0, 160px);
   }
 
   #lizard {
     @include hand($Lizard-gradients, 110px);
-    @include bonus-btns-position(270px, 0, 0, -160px)
+    @include bonus-btns-position(270px, 0, 0, -160px);
   }
   
   #spock {
     @include hand($Spock-gradients, 110px);
-    @include bonus-btns-position(110px, 0, 0, -220px)
+    @include bonus-btns-position(110px, 0, 0, -220px);
   }
  
  }

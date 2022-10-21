@@ -9,6 +9,7 @@
   color: $border-color;
   background-color: $bg-color;
   box-shadow:  0 0 3px $border-color , 0 0 3px $border-color inset;
+  cursor: pointer;
 };
 
 @mixin hand ($hand-type, $size) {
