@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
-  normalGamemode: undefined,
+  normalGamemode: false,
   gamemodeSelected: false,
 };
 
