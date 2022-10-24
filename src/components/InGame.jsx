@@ -11,24 +11,36 @@ function InGame() {
 
   return (
     <div className="in-game-stage">
-      <div className="single-choice">
+      <div
+        className={
+          gameResult === 'player' ? 'single-choice winner' : 'single-choice'
+        }
+        id="user-choice"
+      >
         <Hand handType={userChoice} clickable={false} />
         <p>You Picked</p>
       </div>
-      <div className="single-choice" id="computer-choice">
+      <div
+        className={
+          gameResult === 'computer' ? 'single-choice winner' : 'single-choice'
+        }
+        id="computer-choice"
+      >
         <Hand handType={computerChoice} clickable={false} />
         <p>The House Picked</p>
       </div>
-      <div className="result-container">
-        <p>
-          {gameResult === 'player'
-            ? 'You Win'
-            : gameResult === 'draw'
-            ? 'Draw'
-            : 'You Lose'}
-        </p>
-        <button>Play Again</button>
-      </div>
+      {gameResult !== '' && (
+        <div className="result-container">
+          <p>
+            {gameResult === 'player'
+              ? 'You Win'
+              : gameResult === 'draw'
+              ? 'Draw'
+              : 'You Lose'}
+          </p>
+          <button>Play Again</button>
+        </div>
+      )}
     </div>
   );
 }
