@@ -15,3 +15,4 @@ const resultsSlice = createSlice({
 });
 
 export default resultsSlice.reducer;
+export const {setGameResult} = resultsSlice.actions;
