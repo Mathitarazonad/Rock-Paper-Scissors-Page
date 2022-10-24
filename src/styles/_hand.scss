@@ -12,7 +12,7 @@
   .hands-bg {
     position: absolute;
     top: 40px;
-    z-index: -3;
+    z-index: -1;
     width: 275px;
   }
 
@@ -21,27 +21,34 @@
     &:hover {
       transition: .5s;
       transform: scale(1.1);
-      transform-style: preserve-3d;
       z-index: 3;
-
-      &::before {
-        transform: translateZ(-1rem)
-      }
     }
   }
+}
 
-  #rock {
-    @include hand($Rock-gradients, 8rem);
-  }
-  
-  #paper {
-    @include hand($Paper-gradients, 8rem);
-  }
-  
-  #scissors {
-    @include hand($Scissors-gradients, 8rem);
-  }
+#rock {
+  @include hand($Rock-gradients, 8rem);
+}
 
+#paper {
+  @include hand($Paper-gradients, 8rem);
+}
+
+#scissors {
+  @include hand($Scissors-gradients, 8rem);
+}
+
+#lizard {
+  @include hand($Lizard-gradients, 8rem);
+}
+
+#spock {
+  @include hand($Spock-gradients, 8rem);
+  display: flex;
+  justify-content: center;
+  img {
+    width: 40px;
+  }
 }
 
 .hands-container.bonus {
