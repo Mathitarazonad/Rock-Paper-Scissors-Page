@@ -1,4 +1,6 @@
 @use 'abstracts' as *;
+$Hand-mobile-size : 8rem;
+$Hand-medium-size : 11rem;
 
 .hands-container {
   margin-top: 7rem;
@@ -27,23 +29,23 @@
 }
 
 #rock {
-  @include hand($Rock-gradients, 8rem);
+  @include hand($Rock-gradients, $Hand-mobile-size);
 }
 
 #paper {
-  @include hand($Paper-gradients, 8rem);
+  @include hand($Paper-gradients, $Hand-mobile-size);
 }
 
 #scissors {
-  @include hand($Scissors-gradients, 8rem);
+  @include hand($Scissors-gradients, $Hand-mobile-size);
 }
 
 #lizard {
-  @include hand($Lizard-gradients, 8rem);
+  @include hand($Lizard-gradients, $Hand-mobile-size);
 }
 
 #spock {
-  @include hand($Spock-gradients, 8rem);
+  @include hand($Spock-gradients, $Hand-mobile-size);
   display: flex;
   justify-content: center;
   img {
@@ -92,4 +94,25 @@
   }
  
  }
+
+@media screen and (min-width: 750px){
+  #rock {
+    @include hand($Rock-gradients, $Hand-medium-size);
+  }
+  #paper {
+    @include hand($Paper-gradients, $Hand-medium-size);
+  }
+  #scissors {
+    @include hand($Scissors-gradients, $Hand-medium-size);
+  }
+
+  .hands-container {
+    .hands-bg{
+      width: 350px;
+      top: 70px;
+    }
+  }
+}
+  
+
 

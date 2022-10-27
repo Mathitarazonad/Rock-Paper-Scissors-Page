@@ -23,9 +23,21 @@
   min-height: $size;
   position: relative;
   box-shadow: 0 4px 0 1px getInitial($hand-type);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  img {
+  & img {
     width: 100%;
+  }
+
+  @media (min-width: 750px){
+    border-width: 20px;
+    box-shadow: 0 7px 0 1px getInitial($hand-type);
+
+    & img {
+      width: 75%;
+    }
   }
 }
 

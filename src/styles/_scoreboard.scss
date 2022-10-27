@@ -7,6 +7,7 @@
   padding: 1.25rem;
   border: 3px solid $Scoreboard-border;
   border-radius: 10px;
+  width: 100%;
 
   img {
     height: 75px;
@@ -33,6 +34,13 @@
       color: $Dark-text;
       font-weight: 700;
     }
-  }
 
+    @media (min-width: 750px) {
+      width: 100px;
+      
+      h2 {
+        font-size: .9rem;
+      }
+    }
+  }
 }

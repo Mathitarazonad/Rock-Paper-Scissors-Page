@@ -1,4 +1,4 @@
-import React,{ useEffect } from 'react';
+import React, { useEffect } from 'react';
 import Hand from './Hand';
 import { useSelector, useDispatch } from 'react-redux';
 import { setCurrentPoints, setGameResult } from '../store/resultsSlice';
@@ -10,10 +10,9 @@ function InGame() {
   const gameResult = useSelector((store) => store.results.gameResult);
   const dispatch = useDispatch();
 
-  useEffect(() => evaluateResults(userChoice, computerChoice),[userChoice])
+  useEffect(() => evaluateResults(userChoice, computerChoice), [userChoice]);
 
   function evaluateResults(userChoice, computerChoice) {
-    debugger
     const choices = [
       {
         gameName: 'player',
@@ -94,7 +93,7 @@ function InGame() {
   }
 
   function handleReset() {
-    dispatch(setCurrentPoints(gameResult))
+    dispatch(setCurrentPoints(gameResult));
     dispatch(setUserChoice(''));
     dispatch(setComputerChoice(''));
     dispatch(setGameResult(''));

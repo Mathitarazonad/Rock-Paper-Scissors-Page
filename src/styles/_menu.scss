@@ -53,4 +53,31 @@ $menu-text-color: white;
       @include gamemode-btn(getInitial($Lizard-gradients), $menu-text-color)
     }
   }
+
+  @media (min-width: 750px) {
+
+    .menu-title {
+      h1 {
+        font-size: 5rem;
+      }
+
+      h2 {
+        font-size: 2rem;
+      }
+    }
+
+    .menu-gamemode {
+      width: 65%;
+      align-items: center;
+      padding: 1.5rem;
+
+      h3 {
+        font-size: 2.3rem;
+      }
+
+      button {
+        width: 75%;
+      }
+    }
+  }
 }

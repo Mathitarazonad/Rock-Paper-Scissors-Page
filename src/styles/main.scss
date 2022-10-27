@@ -27,6 +27,7 @@ body {
 .main-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 footer {
@@ -41,5 +42,23 @@ footer {
     text-decoration: none;
     color: white;
     font-weight: 700;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  * {
+    font-size: 18px;
+  }
+  
+  body {
+    padding: 2rem 6rem;
+  }
+
+  footer {
+    font-size: 1.3rem;
+
+    a {
+      font-size: 1.3rem;
+    }
   }
 }
