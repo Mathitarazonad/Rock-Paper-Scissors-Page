@@ -1,13 +1,96 @@
 import React from 'react';
 import Hand from './Hand';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
+import { setGameResult } from '../store/resultsSlice';
+import { setComputerChoice, setUserChoice } from '../store/choicesSlice';
 
 function InGame() {
   const userChoice = useSelector((store) => store.choices.userChoice);
   const computerChoice = useSelector((store) => store.choices.computerChoice);
+  const gameResult = useSelector((store) => store.results.gameResult);
+  const dispatch = useDispatch();
 
-  //Temporarily
-  const gameResult = 'player';
+  evaluateResults(userChoice, computerChoice);
+
+  function evaluateResults(userChoice, computerChoice) {
+    const choices = [
+      {
+        gameName: 'player',
+        choice: userChoice,
+      },
+      {
+        gameName: 'computer',
+        choice: computerChoice,
+      },
+    ];
+
+    const getPlayerWithChoice = (choice) => {
+      const winner = choices.filter((user) => user.choice === choice);
+      return winner[0].gameName;
+    };
+
+    //Normal results
+    if (userChoice === computerChoice) {
+      dispatch(setGameResult('draw'));
+    } else if (
+      (userChoice === 'rock' || computerChoice === 'rock') &&
+      (userChoice === 'scissors' || computerChoice === 'scissors')
+    ) {
+      dispatch(setGameResult(getPlayerWithChoice('rock')));
+    } else if (
+      (userChoice === 'rock' || computerChoice === 'rock') &&
+      (userChoice === 'paper' || computerChoice === 'paper')
+    ) {
+      dispatch(setGameResult(getPlayerWithChoice('paper')));
+    } else if (
+      (userChoice === 'paper' || computerChoice === 'paper') &&
+      (userChoice === 'scissors' || computerChoice === 'scissors')
+    ) {
+      dispatch(setGameResult(getPlayerWithChoice('scissors')));
+    } else if (
+      (userChoice === 'rock' || computerChoice === 'rock') &&
+      (userChoice === 'scissors' || computerChoice === 'scissors')
+    ) {
+      dispatch(setGameResult(getPlayerWithChoice('rock')));
+
+      //Bonus Possible results
+    } else if (
+      (userChoice === 'rock' || computerChoice === 'rock') &&
+      (userChoice === 'lizard' || computerChoice === 'lizard')
+    ) {
+      dispatch(setGameResult(getPlayerWithChoice('rock')));
+    } else if (
+      (userChoice === 'lizard' || computerChoice === 'lizard') &&
+      (userChoice === 'spock' || computerChoice === 'spock')
+    ) {
+      dispatch(setGameResult(getPlayerWithChoice('lizard')));
+    } else if (
+      (userChoice === 'spock' || computerChoice === 'spock') &&
+      (userChoice === 'scissors' || computerChoice === 'scissors')
+    ) {
+      dispatch(setGameResult(getPlayerWithChoice('spock')));
+    } else if (
+      (userChoice === 'scissors' || computerChoice === 'scissors') &&
+      (userChoice === 'lizard' || computerChoice === 'lizard')
+    ) {
+      dispatch(setGameResult(getPlayerWithChoice('scissors')));
+    } else if (
+      (userChoice === 'paper' || computerChoice === 'paper') &&
+      (userChoice === 'spock' || computerChoice === 'spock')
+    ) {
+      dispatch(setGameResult(getPlayerWithChoice('paper')));
+    } else if (
+      (userChoice === 'lizard' || computerChoice === 'lizard') &&
+      (userChoice === 'paper' || computerChoice === 'paper')
+    ) {
+      dispatch(setGameResult(getPlayerWithChoice('lizard')));
+    } else if (
+      (userChoice === 'spock' || computerChoice === 'spock') &&
+      (userChoice === 'rock' || computerChoice === 'rock')
+    ) {
+      dispatch(setGameResult(getPlayerWithChoice('spock')));
+    }
+  }
 
   return (
     <div className="in-game-stage">
