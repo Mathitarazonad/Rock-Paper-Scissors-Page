@@ -92,6 +92,12 @@ function InGame() {
     }
   }
 
+  function handleReset() {
+    dispatch(setUserChoice(''));
+    dispatch(setComputerChoice(''));
+    dispatch(setGameResult(''));
+  }
+
   return (
     <div className="in-game-stage">
       <div
@@ -121,7 +127,7 @@ function InGame() {
               ? 'Draw'
               : 'You Lose'}
           </p>
-          <button>Play Again</button>
+          <button onClick={() => handleReset()}>Play Again</button>
         </div>
       )}
     </div>
