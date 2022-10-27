@@ -40,7 +40,7 @@
 
 // Buttons pulse animation part
 @keyframes btnPulseAnimation {
-  0% {
+  25% {
     box-shadow: 0 0 0 40px rgba(255, 255, 255, 0.07);
   }
   50% {
@@ -98,7 +98,7 @@
 }
 
 @mixin btn-pulse() {
-  animation: btnPulseAnimation 0.75s linear both;
+  animation: btnPulseAnimation 0.75s linear both .6s;
 }
 
 @mixin computerBtnGrowing() {
@@ -106,5 +106,5 @@
 }
 
 @mixin showResultsMobile($time) {
-  animation: resultsAnimation $time linear both;
+  animation: resultsAnimation $time linear both .75s;
 }
