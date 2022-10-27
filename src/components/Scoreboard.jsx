@@ -6,13 +6,14 @@ import { useSelector } from 'react-redux/es/exports';
 function Scoreboard () {
   
   let isNormal = useSelector(store => store.gamemodes.normalGamemode);
+  let score = useSelector(store => store.results.points);
 
   return (
     <div className='scoreboard'>
       <img src={isNormal ? normalLogo : bonusLogo} alt='logo' />
       <div className='scoreboard-counter'>
         <h2>Score</h2>
-        <p>0</p>
+        <p>{score}</p>
       </div>
     </div>
   )
