@@ -31,13 +31,15 @@
     width: 100%;
   }
 
-  @media (min-width: 750px){
+  @media (min-width: 750px) {
     border-width: 20px;
     box-shadow: 0 7px 0 1px getInitial($hand-type);
 
     & img {
       width: 75%;
     }
+
+    
   }
 }
 
@@ -51,72 +53,91 @@
 }
 
 // Buttons pulse animation part
-@keyframes btnPulseAnimation {
+@keyframes btnPulseAnimationMb {
   25% {
-    box-shadow: 0 0 0 40px rgba(255, 255, 255, 0.07);
+    box-shadow: 0 0 0 40px, rgba(255, 255, 255, 0.07);
   }
   50% {
     box-shadow: 0 0 0 40px rgba(255, 255, 255, 0.07),
-    0 0 0 70px rgba(255, 255, 255, 0.06);
+      0 0 0 70px rgba(255, 255, 255, 0.06);
   }
   100% {
     box-shadow: 0 0 0 40px rgba(255, 255, 255, 0.07),
-    0 0 0 70px rgba(255, 255, 255, 0.06),
-    0 0 0 100px rgba(255, 255, 255, 0.03);
+      0 0 0 70px rgba(255, 255, 255, 0.06),
+      0 0 0 100px rgba(255, 255, 255, 0.03);
   }
-  
+}
+
+@keyframes btnPulseAnimationMd {
+  25% {
+    box-shadow: 0 0 0 60px rgba(255, 255, 255, 0.07);
+  }
+  50% {
+    box-shadow: 0 0 0 60px rgba(255, 255, 255, 0.07),
+      0 0 0 100px rgba(255, 255, 255, 0.06);
+  }
+  100% {
+    box-shadow: 0 0 0 60px rgba(255, 255, 255, 0.07),
+      0 0 0 100px rgba(255, 255, 255, 0.06),
+      0 0 0 140px rgba(255, 255, 255, 0.03);
+  }
 }
 
 @keyframes computerBtnAnimation {
-  0%{
+  0% {
     opacity: 0;
     transform: scale(0);
   }
-  25%{
-    opacity: .25;
-    transform: scale(.25);
+  25% {
+    opacity: 0.25;
+    transform: scale(0.25);
   }
-  50%{
-    opacity: .5;
-    transform: scale(.5);
+  50% {
+    opacity: 0.5;
+    transform: scale(0.5);
   }
-  75%{
-    opacity: .75;
-    transform: scale(.75);
+  75% {
+    opacity: 0.75;
+    transform: scale(0.75);
   }
-  100%{
+  100% {
     opacity: 1;
     transform: scale(1);
   }
 }
 
 @keyframes resultsAnimation {
-  0%{
+  0% {
     transform: translateY(-100%);
     opacity: 0;
   }
-  50%{
+  50% {
     transform: translateY(-50%);
-    opacity: .25;
+    opacity: 0.25;
   }
-  75%{
+  75% {
     transform: translateY(-25%);
-    opacity: .5;
+    opacity: 0.5;
   }
-  100%{
+  100% {
     transform: translateY(0%);
     opacity: 1;
   }
 }
 
 @mixin btn-pulse() {
-  animation: btnPulseAnimation 0.75s linear both .6s;
+  @media (max-width: 750px) {
+    animation: btnPulseAnimationMb 0.75s linear both 0.6s;
+  }
+  @media (min-width: 750px) {
+    animation: btnPulseAnimationMd 0.75s linear both 0.6s;
+  }
 }
 
 @mixin computerBtnGrowing() {
-  animation: computerBtnAnimation .5s linear both;
+  animation: computerBtnAnimation 0.5s linear both;
 }
 
 @mixin showResultsMobile($time) {
-  animation: resultsAnimation $time linear both .75s;
+  animation: resultsAnimation $time linear both 0.75s;
 }

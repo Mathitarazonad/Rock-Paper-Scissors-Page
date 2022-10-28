@@ -68,3 +68,14 @@
   }
 }
 
+@media (max-height: 800px) {
+  .in-game-stage{
+    .single-choice {
+      margin-top: 2rem;
+    }
+    .result-container {
+      margin-top: 1rem;
+    }
+  } 
+}
+

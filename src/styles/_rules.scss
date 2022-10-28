@@ -18,11 +18,6 @@
     transition: .5s;
     transform: scale(1.1);
   }
-
-  @media (min-width: 750px) {
-    font-size: 1.2rem;
-    margin-top: 130px;
-  }
 }
 
 .rules-chart {
@@ -57,5 +52,17 @@
       transform: scale(1.3);
     }
   }
+}
+
+@media (min-width: 750px) {
+  .show-rules-btn {
+    font-size: 1.2rem;
+  }
   
+}
+
+@media (max-height: 800px) {
+  .show-rules-btn {
+    margin-top: 1rem;
+  }
 }

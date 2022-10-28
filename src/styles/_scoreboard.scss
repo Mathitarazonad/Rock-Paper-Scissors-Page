@@ -34,10 +34,14 @@
       color: $Dark-text;
       font-weight: 700;
     }
+  }
 
-    @media (min-width: 750px) {
+  @media (min-width: 750px) {
+    padding: 1rem;
+
+    .scoreboard-counter {
       width: 100px;
-      
+    
       h2 {
         font-size: .9rem;
       }
