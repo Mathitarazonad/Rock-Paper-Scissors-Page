@@ -28,6 +28,18 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 1rem;
+}
+
+.btns-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 3rem;
+
+  button {
+    width: 125px;
+  }
 }
 
 footer {
@@ -52,10 +64,6 @@ footer {
   
   body {
     padding: 2rem 6rem;
-  }
-
-  .main-container {
-    gap: 1rem;
   }
 
   footer {

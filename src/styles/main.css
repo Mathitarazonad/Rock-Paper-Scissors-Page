@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600&display=swap");
-@-webkit-keyframes btnPulseAnimation {
+@-webkit-keyframes btnPulseAnimationSd {
   25% {
-    box-shadow: 0 0 0 40px rgba(255, 255, 255, 0.07);
+    box-shadow: 0 0 0 40px, rgba(255, 255, 255, 0.07);
   }
   50% {
     box-shadow: 0 0 0 40px rgba(255, 255, 255, 0.07), 0 0 0 70px rgba(255, 255, 255, 0.06);
@@ -11,15 +11,59 @@
     box-shadow: 0 0 0 40px rgba(255, 255, 255, 0.07), 0 0 0 70px rgba(255, 255, 255, 0.06), 0 0 0 100px rgba(255, 255, 255, 0.03);
   }
 }
-@keyframes btnPulseAnimation {
+@keyframes btnPulseAnimationSd {
   25% {
-    box-shadow: 0 0 0 40px rgba(255, 255, 255, 0.07);
+    box-shadow: 0 0 0 40px, rgba(255, 255, 255, 0.07);
   }
   50% {
     box-shadow: 0 0 0 40px rgba(255, 255, 255, 0.07), 0 0 0 70px rgba(255, 255, 255, 0.06);
   }
   100% {
     box-shadow: 0 0 0 40px rgba(255, 255, 255, 0.07), 0 0 0 70px rgba(255, 255, 255, 0.06), 0 0 0 100px rgba(255, 255, 255, 0.03);
+  }
+}
+@-webkit-keyframes btnPulseAnimationMd {
+  25% {
+    box-shadow: 0 0 0 60px rgba(255, 255, 255, 0.07);
+  }
+  50% {
+    box-shadow: 0 0 0 60px rgba(255, 255, 255, 0.07), 0 0 0 100px rgba(255, 255, 255, 0.06);
+  }
+  100% {
+    box-shadow: 0 0 0 60px rgba(255, 255, 255, 0.07), 0 0 0 100px rgba(255, 255, 255, 0.06), 0 0 0 140px rgba(255, 255, 255, 0.03);
+  }
+}
+@keyframes btnPulseAnimationMd {
+  25% {
+    box-shadow: 0 0 0 60px rgba(255, 255, 255, 0.07);
+  }
+  50% {
+    box-shadow: 0 0 0 60px rgba(255, 255, 255, 0.07), 0 0 0 100px rgba(255, 255, 255, 0.06);
+  }
+  100% {
+    box-shadow: 0 0 0 60px rgba(255, 255, 255, 0.07), 0 0 0 100px rgba(255, 255, 255, 0.06), 0 0 0 140px rgba(255, 255, 255, 0.03);
+  }
+}
+@-webkit-keyframes btnPulseAnimationBd {
+  25% {
+    box-shadow: 0 0 0 80px rgba(255, 255, 255, 0.07);
+  }
+  50% {
+    box-shadow: 0 0 0 80px rgba(255, 255, 255, 0.07), 0 0 0 150px rgba(255, 255, 255, 0.06);
+  }
+  100% {
+    box-shadow: 0 0 0 80px rgba(255, 255, 255, 0.07), 0 0 0 150px rgba(255, 255, 255, 0.06), 0 0 0 210px rgba(255, 255, 255, 0.03);
+  }
+}
+@keyframes btnPulseAnimationBd {
+  25% {
+    box-shadow: 0 0 0 80px rgba(255, 255, 255, 0.07);
+  }
+  50% {
+    box-shadow: 0 0 0 80px rgba(255, 255, 255, 0.07), 0 0 0 150px rgba(255, 255, 255, 0.06);
+  }
+  100% {
+    box-shadow: 0 0 0 80px rgba(255, 255, 255, 0.07), 0 0 0 150px rgba(255, 255, 255, 0.06), 0 0 0 210px rgba(255, 255, 255, 0.03);
   }
 }
 @-webkit-keyframes computerBtnAnimation {
@@ -66,7 +110,7 @@
     transform: scale(1);
   }
 }
-@-webkit-keyframes resultsAnimation {
+@-webkit-keyframes resultsAnimationSd {
   0% {
     transform: translateY(-100%);
     opacity: 0;
@@ -84,7 +128,7 @@
     opacity: 1;
   }
 }
-@keyframes resultsAnimation {
+@keyframes resultsAnimationSd {
   0% {
     transform: translateY(-100%);
     opacity: 0;
@@ -100,6 +144,70 @@
   100% {
     transform: translateY(0%);
     opacity: 1;
+  }
+}
+@-webkit-keyframes resultsAnimationBd {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    display: flex;
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes resultsAnimationBd {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    display: flex;
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes userBtnMovesX {
+  0% {
+    transform: translateX(65%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes userBtnMovesX {
+  0% {
+    transform: translateX(65%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@-webkit-keyframes computerBtnMovesX {
+  0% {
+    transform: translateX(-65%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes computerBtnMovesX {
+  0% {
+    transform: translateX(-65%);
+  }
+  100% {
+    transform: translateX(0%);
   }
 }
 .scoreboard {
@@ -131,22 +239,41 @@
 }
 .scoreboard .scoreboard-counter p {
   font-size: 2.5rem;
-  color: hsl(229deg, 25%, 31%);
+  color: hsla(228deg, 25%, 31%, 0.929);
   font-weight: 700;
 }
+
 @media (min-width: 750px) {
-  .scoreboard .scoreboard-counter {
+  .scoreboard {
+    padding: 1rem;
+  }
+  .scoreboard-counter {
     width: 100px;
   }
-  .scoreboard .scoreboard-counter h2 {
+  .scoreboard-counter h2 {
     font-size: 0.9rem;
   }
 }
-
-.show-rules-btn {
-  width: 43%;
-  margin: auto;
-  margin-top: 100px;
+@media (min-width: 900px) {
+  .scoreboard {
+    width: 780px;
+  }
+  .scoreboard img {
+    height: 90px;
+  }
+  .scoreboard .scoreboard-counter {
+    width: 120px;
+    height: 90px;
+  }
+  .scoreboard .scoreboard-counter h2 {
+    font-size: 1rem;
+  }
+  .scoreboard .scoreboard-counter p {
+    font-weight: 600;
+    font-size: 3rem;
+  }
+}
+.show-rules-btn, .go-menu-btn {
   font-size: 1rem;
   color: white;
   background: none;
@@ -156,16 +283,11 @@
   padding: 0.7rem;
   letter-spacing: 1px;
   font-weight: 600;
+  text-transform: uppercase;
 }
-.show-rules-btn:hover {
+.show-rules-btn:hover, .go-menu-btn:hover {
   transition: 0.5s;
   transform: scale(1.1);
-}
-@media (min-width: 750px) {
-  .show-rules-btn {
-    font-size: 1.2rem;
-    margin-top: 130px;
-  }
 }
 
 .rules-chart {
@@ -182,7 +304,7 @@
   padding: 0 2rem;
 }
 .rules-chart h2 {
-  color: hsl(229deg, 25%, 31%);
+  color: hsla(228deg, 25%, 31%, 0.929);
   font-size: 2rem;
 }
 .rules-chart img {
@@ -198,6 +320,62 @@
   transform: scale(1.3);
 }
 
+@media (min-width: 750px) {
+  .show-rules-btn, .go-menu-btn {
+    font-size: 1.2rem;
+  }
+}
+@media (max-height: 800px) {
+  .main-container .btns-container {
+    margin-top: -2rem;
+  }
+}
+@media screen and (min-width: 900px) {
+  .btns-container {
+    position: absolute;
+    top: 80%;
+    right: 2rem;
+  }
+  .btns-container button {
+    width: 120px;
+  }
+  .rules-chart {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 390px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 1.5rem;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 9999;
+  }
+  .rules-chart h2 {
+    width: 50%;
+    order: 1;
+    font-size: 1.5rem;
+  }
+  .rules-chart .close-icon {
+    order: 2;
+  }
+  .rules-chart .rules-img {
+    width: 100%;
+    margin-top: 0.75rem;
+    order: 3;
+    display: flex;
+    justify-content: center;
+  }
+  .rules-chart .rules-img img {
+    width: 100%;
+  }
+}
 .menu {
   padding: 1.5rem;
   display: flex;
@@ -282,6 +460,11 @@
     width: 75%;
   }
 }
+@media (min-width: 1200px) {
+  .menu .menu-gamemode {
+    width: 50%;
+  }
+}
 
 .hands-container {
   margin-top: 7rem;
@@ -328,7 +511,7 @@
 @media (min-width: 750px) {
   #rock {
     border-width: 20px;
-    box-shadow: 0 7px 0 1px hsl(349deg, 73%, 36%);
+    box-shadow: 0 6px 0 1px hsl(349deg, 73%, 36%);
   }
   #rock img {
     width: 75%;
@@ -356,7 +539,7 @@
 @media (min-width: 750px) {
   #paper {
     border-width: 20px;
-    box-shadow: 0 7px 0 1px hsl(230deg, 85%, 55%);
+    box-shadow: 0 6px 0 1px hsl(230deg, 85%, 55%);
   }
   #paper img {
     width: 75%;
@@ -384,7 +567,7 @@
 @media (min-width: 750px) {
   #scissors {
     border-width: 20px;
-    box-shadow: 0 7px 0 1px hsl(35deg, 100%, 42%);
+    box-shadow: 0 6px 0 1px hsl(35deg, 100%, 42%);
   }
   #scissors img {
     width: 75%;
@@ -412,7 +595,7 @@
 @media (min-width: 750px) {
   #lizard {
     border-width: 20px;
-    box-shadow: 0 7px 0 1px hsl(261deg, 79%, 55%);
+    box-shadow: 0 6px 0 1px hsl(261deg, 79%, 55%);
   }
   #lizard img {
     width: 75%;
@@ -442,7 +625,7 @@
 @media (min-width: 750px) {
   #spock {
     border-width: 20px;
-    box-shadow: 0 7px 0 1px hsla(189deg, 81%, 33%, 0.907);
+    box-shadow: 0 6px 0 1px hsla(189deg, 81%, 33%, 0.907);
   }
   #spock img {
     width: 75%;
@@ -496,7 +679,7 @@
 @media (min-width: 750px) {
   .hands-container.bonus #scissors {
     border-width: 20px;
-    box-shadow: 0 7px 0 1px hsl(35deg, 100%, 42%);
+    box-shadow: 0 6px 0 1px hsl(35deg, 100%, 42%);
   }
   .hands-container.bonus #scissors img {
     width: 75%;
@@ -529,7 +712,7 @@
 @media (min-width: 750px) {
   .hands-container.bonus #paper {
     border-width: 20px;
-    box-shadow: 0 7px 0 1px hsl(230deg, 85%, 55%);
+    box-shadow: 0 6px 0 1px hsl(230deg, 85%, 55%);
   }
   .hands-container.bonus #paper img {
     width: 75%;
@@ -562,7 +745,7 @@
 @media (min-width: 750px) {
   .hands-container.bonus #rock {
     border-width: 20px;
-    box-shadow: 0 7px 0 1px hsl(349deg, 73%, 36%);
+    box-shadow: 0 6px 0 1px hsl(349deg, 73%, 36%);
   }
   .hands-container.bonus #rock img {
     width: 75%;
@@ -595,7 +778,7 @@
 @media (min-width: 750px) {
   .hands-container.bonus #lizard {
     border-width: 20px;
-    box-shadow: 0 7px 0 1px hsl(261deg, 79%, 55%);
+    box-shadow: 0 6px 0 1px hsl(261deg, 79%, 55%);
   }
   .hands-container.bonus #lizard img {
     width: 75%;
@@ -628,7 +811,7 @@
 @media (min-width: 750px) {
   .hands-container.bonus #spock {
     border-width: 20px;
-    box-shadow: 0 7px 0 1px hsla(189deg, 81%, 33%, 0.907);
+    box-shadow: 0 6px 0 1px hsla(189deg, 81%, 33%, 0.907);
   }
   .hands-container.bonus #spock img {
     width: 75%;
@@ -658,7 +841,7 @@
 @media screen and (min-width: 750px) and (min-width: 750px) {
   #rock {
     border-width: 20px;
-    box-shadow: 0 7px 0 1px hsl(349deg, 73%, 36%);
+    box-shadow: 0 6px 0 1px hsl(349deg, 73%, 36%);
   }
   #rock img {
     width: 75%;
@@ -687,7 +870,7 @@
 @media screen and (min-width: 750px) and (min-width: 750px) {
   #paper {
     border-width: 20px;
-    box-shadow: 0 7px 0 1px hsl(230deg, 85%, 55%);
+    box-shadow: 0 6px 0 1px hsl(230deg, 85%, 55%);
   }
   #paper img {
     width: 75%;
@@ -716,9 +899,67 @@
 @media screen and (min-width: 750px) and (min-width: 750px) {
   #scissors {
     border-width: 20px;
-    box-shadow: 0 7px 0 1px hsl(35deg, 100%, 42%);
+    box-shadow: 0 6px 0 1px hsl(35deg, 100%, 42%);
   }
   #scissors img {
+    width: 75%;
+  }
+}
+@media screen and (min-width: 750px) {
+  #lizard {
+    background-color: white;
+    border: 15px solid hsl(261deg, 72%, 63%);
+    border-radius: 50%;
+    padding: 1.5rem;
+    width: 11rem;
+    height: 11rem;
+    min-width: 11rem;
+    min-height: 11rem;
+    position: relative;
+    box-shadow: 0 4px 0 1px hsl(261deg, 79%, 55%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #lizard img {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 750px) and (min-width: 750px) {
+  #lizard {
+    border-width: 20px;
+    box-shadow: 0 6px 0 1px hsl(261deg, 79%, 55%);
+  }
+  #lizard img {
+    width: 75%;
+  }
+}
+@media screen and (min-width: 750px) {
+  #spock {
+    background-color: white;
+    border: 15px solid hsl(189deg, 58%, 57%);
+    border-radius: 50%;
+    padding: 1.5rem;
+    width: 11rem;
+    height: 11rem;
+    min-width: 11rem;
+    min-height: 11rem;
+    position: relative;
+    box-shadow: 0 4px 0 1px hsla(189deg, 81%, 33%, 0.907);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #spock img {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 750px) and (min-width: 750px) {
+  #spock {
+    border-width: 20px;
+    box-shadow: 0 6px 0 1px hsla(189deg, 81%, 33%, 0.907);
+  }
+  #spock img {
     width: 75%;
   }
 }
@@ -726,6 +967,391 @@
   .hands-container .hands-bg {
     width: 350px;
     top: 70px;
+  }
+  .hands-container.bonus .hands-bg {
+    width: 350px;
+    height: 350px;
+  }
+  .hands-container.bonus #scissors {
+    background-color: white;
+    border: 15px solid hsl(40deg, 84%, 53%);
+    border-radius: 50%;
+    padding: 1.5rem;
+    width: 130px;
+    height: 130px;
+    min-width: 130px;
+    min-height: 130px;
+    position: relative;
+    box-shadow: 0 4px 0 1px hsl(35deg, 100%, 42%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -15px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    margin: auto;
+  }
+  .hands-container.bonus #scissors img {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 750px) and (min-width: 750px) {
+  .hands-container.bonus #scissors {
+    border-width: 20px;
+    box-shadow: 0 6px 0 1px hsl(35deg, 100%, 42%);
+  }
+  .hands-container.bonus #scissors img {
+    width: 75%;
+  }
+}
+@media screen and (min-width: 750px) {
+  .hands-container.bonus #paper {
+    background-color: white;
+    border: 15px solid hsl(230deg, 89%, 65%);
+    border-radius: 50%;
+    padding: 1.5rem;
+    width: 130px;
+    height: 130px;
+    min-width: 130px;
+    min-height: 130px;
+    position: relative;
+    box-shadow: 0 4px 0 1px hsl(230deg, 85%, 55%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 130px;
+    left: 290px;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  .hands-container.bonus #paper img {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 750px) and (min-width: 750px) {
+  .hands-container.bonus #paper {
+    border-width: 20px;
+    box-shadow: 0 6px 0 1px hsl(230deg, 85%, 55%);
+  }
+  .hands-container.bonus #paper img {
+    width: 75%;
+  }
+}
+@media screen and (min-width: 750px) {
+  .hands-container.bonus #rock {
+    background-color: white;
+    border: 15px solid hsl(349deg, 70%, 56%);
+    border-radius: 50%;
+    padding: 1.5rem;
+    width: 130px;
+    height: 130px;
+    min-width: 130px;
+    min-height: 130px;
+    position: relative;
+    box-shadow: 0 4px 0 1px hsl(349deg, 73%, 36%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 300px;
+    left: 180px;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  .hands-container.bonus #rock img {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 750px) and (min-width: 750px) {
+  .hands-container.bonus #rock {
+    border-width: 20px;
+    box-shadow: 0 6px 0 1px hsl(349deg, 73%, 36%);
+  }
+  .hands-container.bonus #rock img {
+    width: 75%;
+  }
+}
+@media screen and (min-width: 750px) {
+  .hands-container.bonus #lizard {
+    background-color: white;
+    border: 15px solid hsl(261deg, 72%, 63%);
+    border-radius: 50%;
+    padding: 1.5rem;
+    width: 130px;
+    height: 130px;
+    min-width: 130px;
+    min-height: 130px;
+    position: relative;
+    box-shadow: 0 4px 0 1px hsl(261deg, 79%, 55%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 300px;
+    left: -180px;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  .hands-container.bonus #lizard img {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 750px) and (min-width: 750px) {
+  .hands-container.bonus #lizard {
+    border-width: 20px;
+    box-shadow: 0 6px 0 1px hsl(261deg, 79%, 55%);
+  }
+  .hands-container.bonus #lizard img {
+    width: 75%;
+  }
+}
+@media screen and (min-width: 750px) {
+  .hands-container.bonus #spock {
+    background-color: white;
+    border: 15px solid hsl(189deg, 58%, 57%);
+    border-radius: 50%;
+    padding: 1.5rem;
+    width: 130px;
+    height: 130px;
+    min-width: 130px;
+    min-height: 130px;
+    position: relative;
+    box-shadow: 0 4px 0 1px hsla(189deg, 81%, 33%, 0.907);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 130px;
+    left: -290px;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  .hands-container.bonus #spock img {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 750px) and (min-width: 750px) {
+  .hands-container.bonus #spock {
+    border-width: 20px;
+    box-shadow: 0 6px 0 1px hsla(189deg, 81%, 33%, 0.907);
+  }
+  .hands-container.bonus #spock img {
+    width: 75%;
+  }
+}
+@media screen and (min-width: 750px) {
+  .hands-container.bonus #scissors, .hands-container.bonus #paper, .hands-container.bonus #rock, .hands-container.bonus #lizard, .hands-container.bonus #spock {
+    border-width: 15px;
+  }
+  .hands-container.bonus #scissors img, .hands-container.bonus #paper img, .hands-container.bonus #rock img, .hands-container.bonus #lizard img, .hands-container.bonus #spock img {
+    width: 100%;
+  }
+}
+@media screen and (max-height: 750px) {
+  .hands-container.bonus .hands-bg {
+    top: 80px;
+  }
+  .hands-container.bonus #scissors {
+    background-color: white;
+    border: 15px solid hsl(40deg, 84%, 53%);
+    border-radius: 50%;
+    padding: 1.5rem;
+    width: 105px;
+    height: 105px;
+    min-width: 105px;
+    min-height: 105px;
+    position: relative;
+    box-shadow: 0 4px 0 1px hsl(35deg, 100%, 42%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -120px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    margin: auto;
+  }
+  .hands-container.bonus #scissors img {
+    width: 100%;
+  }
+}
+@media screen and (max-height: 750px) and (min-width: 750px) {
+  .hands-container.bonus #scissors {
+    border-width: 20px;
+    box-shadow: 0 6px 0 1px hsl(35deg, 100%, 42%);
+  }
+  .hands-container.bonus #scissors img {
+    width: 75%;
+  }
+}
+@media screen and (max-height: 750px) {
+  .hands-container.bonus #paper {
+    background-color: white;
+    border: 15px solid hsl(230deg, 89%, 65%);
+    border-radius: 50%;
+    padding: 1.5rem;
+    width: 105px;
+    height: 105px;
+    min-width: 105px;
+    min-height: 105px;
+    position: relative;
+    box-shadow: 0 4px 0 1px hsl(230deg, 85%, 55%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50px;
+    left: 220px;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  .hands-container.bonus #paper img {
+    width: 100%;
+  }
+}
+@media screen and (max-height: 750px) and (min-width: 750px) {
+  .hands-container.bonus #paper {
+    border-width: 20px;
+    box-shadow: 0 6px 0 1px hsl(230deg, 85%, 55%);
+  }
+  .hands-container.bonus #paper img {
+    width: 75%;
+  }
+}
+@media screen and (max-height: 750px) {
+  .hands-container.bonus #rock {
+    background-color: white;
+    border: 15px solid hsl(349deg, 70%, 56%);
+    border-radius: 50%;
+    padding: 1.5rem;
+    width: 105px;
+    height: 105px;
+    min-width: 105px;
+    min-height: 105px;
+    position: relative;
+    box-shadow: 0 4px 0 1px hsl(349deg, 73%, 36%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 200px;
+    left: 160px;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  .hands-container.bonus #rock img {
+    width: 100%;
+  }
+}
+@media screen and (max-height: 750px) and (min-width: 750px) {
+  .hands-container.bonus #rock {
+    border-width: 20px;
+    box-shadow: 0 6px 0 1px hsl(349deg, 73%, 36%);
+  }
+  .hands-container.bonus #rock img {
+    width: 75%;
+  }
+}
+@media screen and (max-height: 750px) {
+  .hands-container.bonus #lizard {
+    background-color: white;
+    border: 15px solid hsl(261deg, 72%, 63%);
+    border-radius: 50%;
+    padding: 1.5rem;
+    width: 105px;
+    height: 105px;
+    min-width: 105px;
+    min-height: 105px;
+    position: relative;
+    box-shadow: 0 4px 0 1px hsl(261deg, 79%, 55%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 200px;
+    left: -160px;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  .hands-container.bonus #lizard img {
+    width: 100%;
+  }
+}
+@media screen and (max-height: 750px) and (min-width: 750px) {
+  .hands-container.bonus #lizard {
+    border-width: 20px;
+    box-shadow: 0 6px 0 1px hsl(261deg, 79%, 55%);
+  }
+  .hands-container.bonus #lizard img {
+    width: 75%;
+  }
+}
+@media screen and (max-height: 750px) {
+  .hands-container.bonus #spock {
+    background-color: white;
+    border: 15px solid hsl(189deg, 58%, 57%);
+    border-radius: 50%;
+    padding: 1.5rem;
+    width: 105px;
+    height: 105px;
+    min-width: 105px;
+    min-height: 105px;
+    position: relative;
+    box-shadow: 0 4px 0 1px hsla(189deg, 81%, 33%, 0.907);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50px;
+    left: -220px;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  .hands-container.bonus #spock img {
+    width: 100%;
+  }
+}
+@media screen and (max-height: 750px) and (min-width: 750px) {
+  .hands-container.bonus #spock {
+    border-width: 20px;
+    box-shadow: 0 6px 0 1px hsla(189deg, 81%, 33%, 0.907);
+  }
+  .hands-container.bonus #spock img {
+    width: 75%;
+  }
+}
+@media screen and (min-width: 900px) {
+  .hands-container {
+    margin-top: 1.5rem;
+    gap: 3rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hands-container {
+    margin-top: 5rem;
+    max-width: 500px;
+  }
+  .hands-container .hands-bg {
+    width: 450px;
+  }
+  #scissors, #rock, #paper, #lizard, #spock {
+    width: 12.5rem;
+    height: 12.5rem;
+    border-width: 25px;
   }
 }
 .in-game-stage {
@@ -760,15 +1386,41 @@
   content: "";
   border-radius: 50%;
   z-index: -1;
-  -webkit-animation: btnPulseAnimation 0.75s linear both 0.6s;
-          animation: btnPulseAnimation 0.75s linear both 0.6s;
+}
+@media (max-width: 750px) {
+  .in-game-stage .single-choice.winner .single-hand::after {
+    -webkit-animation: btnPulseAnimationSd 0.75s linear both 0.6s;
+            animation: btnPulseAnimationSd 0.75s linear both 0.6s;
+  }
+}
+@media (min-width: 750px) {
+  .in-game-stage .single-choice.winner .single-hand::after {
+    -webkit-animation: btnPulseAnimationMd 0.75s linear both 0.6s;
+            animation: btnPulseAnimationMd 0.75s linear both 0.6s;
+  }
+}
+@media (min-width: 1200px) {
+  .in-game-stage .single-choice.winner .single-hand::after {
+    -webkit-animation: btnPulseAnimationBd 0.75s linear both 0.6s;
+            animation: btnPulseAnimationBd 0.75s linear both 0.6s;
+  }
 }
 .in-game-stage .result-container {
   width: 100%;
   text-align: center;
   margin-top: 5rem;
-  -webkit-animation: resultsAnimation 1s linear both 0.75s;
-          animation: resultsAnimation 1s linear both 0.75s;
+}
+@media (max-width: 1000px) {
+  .in-game-stage .result-container {
+    -webkit-animation: resultsAnimationSd 1s linear both 0.75s;
+            animation: resultsAnimationSd 1s linear both 0.75s;
+  }
+}
+@media (min-width: 1000px) {
+  .in-game-stage .result-container {
+    -webkit-animation: resultsAnimationBd 1s linear both 0.8s;
+            animation: resultsAnimationBd 1s linear both 0.8s;
+  }
 }
 .in-game-stage .result-container p {
   font-size: 4rem;
@@ -780,7 +1432,7 @@
   border-radius: 15px;
   border-style: none;
   margin-top: 1rem;
-  color: hsl(229deg, 25%, 31%);
+  color: hsla(228deg, 25%, 31%, 0.929);
   letter-spacing: 2.5px;
   font-size: 1.1rem;
   text-transform: uppercase;
@@ -790,6 +1442,51 @@
   color: hsl(349deg, 70%, 56%);
 }
 
+@media (max-height: 800px) {
+  .in-game-stage .single-choice {
+    margin-top: 2rem;
+  }
+  .in-game-stage .result-container {
+    margin-top: 1rem;
+  }
+}
+@media (min-width: 900px) {
+  .in-game-stage {
+    flex-wrap: nowrap;
+    gap: 2.5rem;
+    margin-top: 5rem;
+  }
+  .in-game-stage .single-choice p {
+    order: 1;
+  }
+  .in-game-stage .single-choice .single-hand {
+    order: 2;
+  }
+  .in-game-stage #user-choice {
+    order: 1;
+    -webkit-animation: userBtnMovesX 0.5s linear both 0.5s;
+            animation: userBtnMovesX 0.5s linear both 0.5s;
+  }
+  .in-game-stage .result-container {
+    order: 2;
+  }
+  .in-game-stage #computer-choice {
+    order: 3;
+    -webkit-animation: computerBtnMovesX 0.5s linear both 0.5s;
+            animation: computerBtnMovesX 0.5s linear both 0.5s;
+  }
+  .in-game-stage .result-container button {
+    width: 100%;
+  }
+}
+@media (min-width: 1100px) {
+  .in-game-stage {
+    gap: 6rem;
+  }
+  .in-game-stage .single-choice p {
+    font-size: 1.25rem;
+  }
+}
 * {
   font-family: "Barlow Semi Condensed", sans-serif;
   padding: 0;
@@ -807,6 +1504,17 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 1rem;
+}
+
+.btns-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+.btns-container button {
+  width: 125px;
 }
 
 footer {
@@ -836,5 +1544,10 @@ footer a {
   }
   footer a {
     font-size: 1.3rem;
+  }
+}
+@media screen and (min-width: 900px) {
+  * {
+    font-size: 17px;
   }
 }/*# sourceMappingURL=main.css.map */

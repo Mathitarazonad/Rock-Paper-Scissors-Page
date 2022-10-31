@@ -21,7 +21,6 @@
     font-family: 'Barlow Semi Condensed', sans-serif;
 
     &#computer-choice {
-      @include computerBtnAnimationX();
       & .single-hand {
         @include computerBtnGrowing();
       }
@@ -100,13 +99,14 @@
       order: 1;
       @include userBtnAnimationX();
     }
-  
+
     .result-container {
       order: 2;
     }
   
     #computer-choice {
       order: 3;
+      @include computerBtnAnimationX();
     }
   
     .result-container {

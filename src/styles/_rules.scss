@@ -1,9 +1,6 @@
 @use 'abstracts' as *;
 
-.show-rules-btn {
-  width: 43%;
-  margin: auto;
-  margin-top: 100px;
+.show-rules-btn, .go-menu-btn {
   font-size: 1rem;
   color: white;
   background:none;
@@ -13,6 +10,7 @@
   padding: .7rem;
   letter-spacing: 1px;
   font-weight: 600;
+  text-transform: uppercase;
 
   &:hover{
     transition: .5s;
@@ -55,24 +53,27 @@
 }
 
 @media (min-width: 750px) {
-  .show-rules-btn {
+  .show-rules-btn, .go-menu-btn {
     font-size: 1.2rem;
   }
   
 }
 
 @media (max-height: 800px) {
-  .show-rules-btn {
-    margin-top: 1rem;
+  .main-container .btns-container {
+    margin-top: -2rem;
   }
 }
 
 @media screen and (min-width: 900px) {
-  .show-rules-btn {
+  .btns-container {
     position: absolute;
-    width: 120px;
     top: 80%;
     right: 2rem;
+
+    button {
+      width: 120px;
+    }
   }
 
   .rules-chart {
