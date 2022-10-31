@@ -23,6 +23,7 @@ Users should be able to:
 
 - View the optimal layout for the game depending on their device's screen size.
 - Play Rock, Paper, Scissors against the computer.
+- **Bonus**: Make a menu.
 - **Bonus**: Play Rock, Paper, Scissors, Lizard, Spock against the computer.
 - **Bonus**: Go back to the menu to choose the gamemode.
 
@@ -68,12 +69,14 @@ I only took a few screenshots of mobile and computer examples, the design for me
 
 ### What I learned
 
-"Use this section to recap over some of your major learnings while working through this project."
+**"Use this section to recap over some of your major learnings while working through this project."**
+
 Well, working with this project helped me to explore and try some tools that I was interested about, like the preprocessor of CSS (SASS) and a state management tool like redux, in this case Redux Toolkit which is more easy to use. As well as the useState hook which I applied in this page and understood the basic of this awesome hook of React and why it is so important to know about.
 
 ### Continued development
 
-"Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect."
+**"Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect."**
+
 Based on the technologies that I mentioned above, I need to continue studying these tools and also start working with Backend things, for example, this challenge from Fronted Mentor gave a optional feature that is to save the points that the user obtain during a game, and for that I think that I need to work with data bases or something that I don't study yet. And how I said, this project really challenged me and put my skills into test, and that helped me a lot to really understand more about some concepts that I didn't understood before at all.
 
 But also I learned that I can't force myself to study more than one techonology at the same time like I did during this project with Redux and Sass, and that was a completely headache and cause that the project take more time than I expected. But i'm happy that I overcame this challenge.
