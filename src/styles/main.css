@@ -1340,7 +1340,7 @@
     gap: 3rem;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) and (min-height: 950px) {
   .hands-container {
     margin-top: 5rem;
     max-width: 500px;

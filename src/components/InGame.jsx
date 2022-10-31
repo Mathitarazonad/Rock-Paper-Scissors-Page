@@ -10,7 +10,7 @@ function InGame() {
   const gameResult = useSelector((store) => store.results.gameResult);
   const dispatch = useDispatch();
 
-  useEffect(() => evaluateResults(userChoice, computerChoice), [userChoice]);
+  useEffect(() => evaluateResults(userChoice, computerChoice));
 
   function evaluateResults(userChoice, computerChoice) {
     const choices = [

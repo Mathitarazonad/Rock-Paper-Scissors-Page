@@ -9,8 +9,8 @@ function App() {
   return (
     <div className="App">
       {gamemodeIsSelected ? <Game /> : <Menu />}
-      <footer> Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://www.frontendmentor.io/profile/Mathitarazonad" target='_blank'>Mathias Tarazona</a>.</footer>
+      <footer> Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel='noreferrer noopener'>Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/Mathitarazonad" target='_blank' rel='noreferrer noopener'>Mathias Tarazona</a>.</footer>
     </div>
   );
 }
