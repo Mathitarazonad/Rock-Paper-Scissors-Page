@@ -333,7 +333,7 @@
 @media screen and (min-width: 900px) {
   .btns-container {
     position: absolute;
-    top: 80%;
+    top: 85%;
     right: 2rem;
   }
   .btns-container button {
@@ -639,7 +639,7 @@
   width: 100%;
   margin: auto;
   top: 130px;
-  margin-bottom: 420px;
+  margin-bottom: 480px;
 }
 .hands-container.bonus .hands-bg {
   position: absolute;
