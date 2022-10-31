@@ -14,9 +14,6 @@ This is a solution to the [Rock, Paper, Scissors challenge on Frontend Mentor](h
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -24,27 +21,37 @@ This is a solution to the [Rock, Paper, Scissors challenge on Frontend Mentor](h
 
 Users should be able to:
 
-- View the optimal layout for the game depending on their device's screen size
-- Play Rock, Paper, Scissors against the computer
-- Maintain the state of the score after refreshing the browser _(optional)_
-- **Bonus**: Play Rock, Paper, Scissors, Lizard, Spock against the computer _(optional)_
+- View the optimal layout for the game depending on their device's screen size.
+- Play Rock, Paper, Scissors against the computer.
+- **Bonus**: Play Rock, Paper, Scissors, Lizard, Spock against the computer.
+- **Bonus**: Go back to the menu to choose the gamemode.
 
 ### Screenshot
 
-![](./screenshot.jpg)
+I only took a few screenshots of mobile and computer examples, the design for medium size devices like a tablet and others are very similar to the mobile design.
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
+[Mobile Menu](./screenshots/mobile-menu.png)
 
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
+[Mobile Design](./screenshots/mobile-design.png)
 
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
+[Mobile Rules](./screenshots/mobile-rules.png)
 
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+[Mobile Results](./screenshots/mobile-results.png)
+
+[Tablet Design](./screenshots/tablet-design.png)
+
+[Desktop Menu](./screenshots/desktop-menu.png)
+
+[Desktop Design](./screenshots/desktop-design.png)
+
+[Desktop Rules](./screenshots/desktop-rules.png)
+
+[Desktop Results](./screenshots/desktop-results.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: https://github.com/Mathitarazonad/Rock-Paper-Scissors-Page
+- Live Site URL: https://mathitarazonad.github.io/Rock-Paper-Scissors-Page/
 
 ## My process
 
@@ -53,61 +60,30 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
 - [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- [Redux Toolkit](https://redux-toolkit.js.org/) - Redux State Container
+- [Sass](https://sass-lang.com/) - CSS Preprocessor
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+"Use this section to recap over some of your major learnings while working through this project."
+Well, working with this project helped me to explore and try some tools that I was interested about, like the preprocessor of CSS (SASS) and a state management tool like redux, in this case Redux Toolkit which is more easy to use. As well as the useState hook which I applied in this page and understood the basic of this awesome hook of React and why it is so important to know about.
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+"Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect."
+Based on the technologies that I mentioned above, I need to continue studying these tools and also start working with Backend things, for example, this challenge from Fronted Mentor gave a optional feature that is to save the points that the user obtain during a game, and for that I think that I need to work with data bases or something that I don't study yet. And how I said, this project really challenged me and put my skills into test, and that helped me a lot to really understand more about some concepts that I didn't understood before at all.
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+But also I learned that I can't force myself to study more than one techonology at the same time like I did during this project with Redux and Sass, and that was a completely headache and cause that the project take more time than I expected. But i'm happy that I overcame this challenge.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [Sass Basics](https://sass-lang.com/guide)
+- [Redux Toolkit Guide](https://redux-toolkit.js.org/tutorials/quick-start)
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Frontend Mentor - [Mathias Tarazona](https://www.frontendmentor.io/profile/Mathitarazonad)
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
