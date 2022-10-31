@@ -5,6 +5,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { displayRules } from '../store/rulesSlice';
 import Hand from './Hand';
 import InGame from './InGame';
+import BackBtn from './BackBtn';
 
 function Game() {
   const dispatch = useDispatch();
@@ -49,12 +50,15 @@ function Game() {
         {showRules ? (
           <RulesChart />
         ) : (
-          <button
-            className="show-rules-btn"
-            onClick={() => dispatch(displayRules())}
-          >
-            RULES
-          </button>
+          <div className='btns-container'>
+            <button
+                className="show-rules-btn"
+                onClick={() => dispatch(displayRules())}
+            >
+              RULES
+            </button>
+            <BackBtn />
+          </div>
         )}
       </div>
     </main>
