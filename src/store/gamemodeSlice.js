@@ -17,8 +17,12 @@ const GamemodeSlice = createSlice({
       state.normalGamemode = false;
       state.gamemodeSelected = true;
     },
+    resetGamemode: (state) => {
+      state.gamemodeSelected = false;
+      state.normalGamemode = false;
+    }
   },
 });
 
-export const { setNormalGamemode, setBonusGamemode } = GamemodeSlice.actions;
+export const { setNormalGamemode, setBonusGamemode, resetGamemode } = GamemodeSlice.actions;
 export default GamemodeSlice.reducer;
