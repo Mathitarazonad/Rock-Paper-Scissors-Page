@@ -13,11 +13,12 @@ function RulesChart() {
   return (
     <div className="rules-chart">
       <h2>RULES</h2>
+      <div className='rules-img'>
       <img
         src={isNormal ? normalRules : bonusRules}
         alt="rules"
-        className="rules-img"
       />
+      </div>
       <img
         src={iconClose}
         alt="close"

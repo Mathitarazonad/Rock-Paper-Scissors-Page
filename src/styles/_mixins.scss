@@ -1,5 +1,6 @@
 @use 'variables' as *;
 @use 'functions' as *;
+
 @mixin gamemode-btn($bg-color, $border-color) {
   border: 5px solid $border-color;
   border-radius: 20px;
@@ -33,7 +34,7 @@
 
   @media (min-width: 750px) {
     border-width: 20px;
-    box-shadow: 0 7px 0 1px getInitial($hand-type);
+    box-shadow: 0 6px 0 1px getInitial($hand-type);
 
     & img {
       width: 75%;
@@ -52,8 +53,9 @@
   margin: auto;
 }
 
-// Buttons pulse animation part
-@keyframes btnPulseAnimationMb {
+
+// Buttons pulse animation part - Capital letter means the size
+@keyframes btnPulseAnimationSd {
   25% {
     box-shadow: 0 0 0 40px, rgba(255, 255, 255, 0.07);
   }
@@ -83,6 +85,22 @@
   }
 }
 
+@keyframes btnPulseAnimationBd {
+  25% {
+    box-shadow: 0 0 0 80px rgba(255, 255, 255, 0.07);
+  }
+  50% {
+    box-shadow: 0 0 0 80px rgba(255, 255, 255, 0.07),
+      0 0 0 150px rgba(255, 255, 255, 0.06);
+  }
+  100% {
+    box-shadow: 0 0 0 80px rgba(255, 255, 255, 0.07),
+      0 0 0 150px rgba(255, 255, 255, 0.06),
+      0 0 0 210px rgba(255, 255, 255, 0.03);
+  }
+}
+
+//Computer btn going bigger animation
 @keyframes computerBtnAnimation {
   0% {
     opacity: 0;
@@ -106,31 +124,77 @@
   }
 }
 
-@keyframes resultsAnimation {
+//Show rules animations
+@keyframes resultsAnimationSd {
   0% {
     transform: translateY(-100%);
     opacity: 0;
   }
+
   50% {
     transform: translateY(-50%);
     opacity: 0.25;
   }
+
   75% {
     transform: translateY(-25%);
     opacity: 0.5;
   }
+
   100% {
     transform: translateY(0%);
     opacity: 1;
   }
 }
 
+@keyframes resultsAnimationBd {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  
+  25% {
+    opacity: 0.25;
+  }
+
+  50% {
+    display: flex;
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes userBtnMovesX {
+  0% {
+    transform: translateX(65%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes computerBtnMovesX {
+  0% {
+    transform: translateX(-65%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+
 @mixin btn-pulse() {
   @media (max-width: 750px) {
-    animation: btnPulseAnimationMb 0.75s linear both 0.6s;
+    animation: btnPulseAnimationSd 0.75s linear both 0.6s;
   }
   @media (min-width: 750px) {
     animation: btnPulseAnimationMd 0.75s linear both 0.6s;
+  }
+  @media (min-width: 1200px) {
+    animation: btnPulseAnimationBd 0.75s linear both 0.6s
   }
 }
 
@@ -138,6 +202,19 @@
   animation: computerBtnAnimation 0.5s linear both;
 }
 
-@mixin showResultsMobile($time) {
-  animation: resultsAnimation $time linear both 0.75s;
+@mixin showResults($time) {
+  @media (max-width: 1000px) {
+    animation: resultsAnimationSd $time linear both 0.75s
+  }
+  @media (min-width: 1000px) {
+    animation:resultsAnimationBd $time linear both .8s;
+  }
+}
+
+@mixin userBtnAnimationX () {
+  animation: userBtnMovesX .5s linear both .5s;
+}
+
+@mixin computerBtnAnimationX () {
+  animation: computerBtnMovesX .5s linear both .5s;
 }

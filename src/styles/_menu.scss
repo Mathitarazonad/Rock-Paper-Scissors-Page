@@ -80,4 +80,10 @@ $menu-text-color: white;
       }
     }
   }
+
+  @media (min-width: 1200px) {
+    .menu-gamemode {
+      width: 50%;
+    }
+  }
 }

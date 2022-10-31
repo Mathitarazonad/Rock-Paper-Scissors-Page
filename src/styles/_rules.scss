@@ -66,3 +66,48 @@
     margin-top: 1rem;
   }
 }
+
+@media screen and (min-width: 900px) {
+  .show-rules-btn {
+    position: absolute;
+    width: 120px;
+    top: 80%;
+    right: 2rem;
+  }
+
+  .rules-chart {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 390px;
+    height: fit-content;
+    padding: 1.5rem;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    top: 0; bottom: 0; left: 0; right: 0;
+    margin: auto;
+    z-index: 9999;
+    
+    h2 {
+      width: 50%;
+      order: 1;
+      font-size: 1.5rem;
+    }
+
+    .close-icon {
+      order: 2;
+    }
+
+    .rules-img {
+      width: 100%;
+      margin-top: .75rem;
+      order: 3;
+      display: flex;
+      justify-content: center;
+      
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

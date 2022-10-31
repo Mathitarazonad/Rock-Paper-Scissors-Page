@@ -21,6 +21,7 @@
     font-family: 'Barlow Semi Condensed', sans-serif;
 
     &#computer-choice {
+      @include computerBtnAnimationX();
       & .single-hand {
         @include computerBtnGrowing();
       }
@@ -42,7 +43,7 @@
     width: 100%;
     text-align: center;
     margin-top: 5rem;
-    @include showResultsMobile(1s);
+    @include showResults(1s);
     
     p {
       font-size: 4rem;
@@ -79,3 +80,51 @@
   } 
 }
 
+@media (min-width: 900px) {
+  .in-game-stage {
+    flex-wrap: nowrap;
+    gap: 2.5rem;
+    margin-top: 5rem;
+
+    .single-choice {
+      p {
+        order: 1;
+      }
+
+      .single-hand {
+        order: 2;
+      }
+    }
+
+    #user-choice {
+      order: 1;
+      @include userBtnAnimationX();
+    }
+  
+    .result-container {
+      order: 2;
+    }
+  
+    #computer-choice {
+      order: 3;
+    }
+  
+    .result-container {
+      button {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (min-width: 1100px) {
+  .in-game-stage {
+    gap: 6rem;
+
+    .single-choice {
+      p {
+        font-size: 1.25rem;
+      }
+    }
+  }
+}

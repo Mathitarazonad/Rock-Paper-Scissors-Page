@@ -1,6 +1,7 @@
 @use 'abstracts' as *;
 $Hand-mobile-size : 8rem;
 $Hand-medium-size : 11rem;
+$Hand-big-size : 12.5rem;
 
 .hands-container {
   margin-top: 7rem;
@@ -198,5 +199,28 @@ $Hand-medium-size : 11rem;
   }
 }
   
+@media screen and (min-width: 900px) {
+  .hands-container {
+    margin-top: 1.5rem;
+    gap: 3rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hands-container {
+    margin-top: 5rem;
+    max-width: 500px;
+
+    & .hands-bg {
+      width: 450px;
+    }
+  }
+
+  #scissors, #rock, #paper, #lizard, #spock {
+    width: $Hand-big-size;
+    height: $Hand-big-size;
+    border-width: 25px;
+  }
+}
 
 
