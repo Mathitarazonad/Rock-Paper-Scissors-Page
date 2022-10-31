@@ -77,9 +77,9 @@ Well, working with this project helped me to explore and try some tools that I w
 
 **"Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect."**
 
-Based on the technologies that I mentioned above, I need to continue studying these tools and also start working with Backend things, for example, this challenge from Fronted Mentor gave a optional feature that is to save the points that the user obtain during a game, and for that I think that I need to work with data bases or something that I don't study yet. And how I said, this project really challenged me and put my skills into test, and that helped me a lot to really understand more about some concepts that I didn't understood before at all.
+Based on the technologies that I mentioned above, I need to continue studying these tools and also start working with Backend things, for example, this challenge from Fronted Mentor gave a optional feature to implement that is to save the points that the user obtain during a game, and for that I think that I need to work with data bases or something that I didn't study yet. And how I said, this project really challenged me and put my skills into test, and that helped me a lot to really understand more about some concepts that I didn't understood before at all.
 
-But also I learned that I can't force myself to study more than one techonology at the same time like I did during this project with Redux and Sass, and that was a completely headache and cause that the project take more time than I expected. But i'm happy that I overcame this challenge.
+But also I learned that I can't force myself to study more than one technology at the same time like I did during this project with Redux and Sass, and that was a completely headache and cause that the project take more time than I expected. But i'm happy that I overcame this challenge.
 
 ### Useful resources
 
